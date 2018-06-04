@@ -6,27 +6,21 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 0
-    path: Assets/Sandbox/Todoroki/Test3.unity
+    path: Assets/Todoroki/Test3.unity
     guid: 5c05f0fe9491cef44a08c6f8e47fe18c
   - enabled: 0
-    path: Assets/Sandbox/Todoroki/Success.unity
-    guid: 6928be63f837df04f81da74997f89283
-  - enabled: 0
-    path: Assets/Sandbox/Todoroki/Failure.unity
-    guid: 4427818191bfe9044a5b0dd6ff09f5bd
-  - enabled: 0
-    path: Assets/Sandbox/Todoroki/Room.unity
-    guid: 7c0dd1bf7af994d4db8872c4144c809f
+    path: Assets/AnotherVer.unity
+    guid: b08ddc4cf80f8d5498eb5ffbcb01899f
   - enabled: 1
-    path: Assets/Success.unity
-    guid: aadc44f203ce4d342a159b6e790737a0
+    path: Assets/Tutorial.unity
+    guid: 4d7b62ce63a597843abb560df92d4264
   - enabled: 1
     path: Assets/Main.unity
     guid: be25fedf791b76c4bba20e6ac67b4439
   - enabled: 1
-    path: Assets/Failure.unity
-    guid: 6ecd81b43696be44f9251767328fe1c9
+    path: Assets/Success.unity
+    guid: 6928be63f837df04f81da74997f89283
   - enabled: 1
-    path: Assets/Tutorial.unity
-    guid: b08ddc4cf80f8d5498eb5ffbcb01899f
+    path: Assets/Failure.unity
+    guid: 4427818191bfe9044a5b0dd6ff09f5bd
   m_configObjects: {}

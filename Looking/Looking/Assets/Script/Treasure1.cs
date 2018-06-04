@@ -1,55 +1,59 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿//using system.collections;
+//using system.collections.generic;
+//using unityengine;
 
-public class Treasure1 : MonoBehaviour {
-    RaycastHit hit;
-    public SteamVR_TrackedObject trackedObject;
-    GameObject pointingObj;
-    GameObject targetObj = null;
+//public class treasure1 : monobehaviour
+//{
+//    raycasthit hit;
+//    public steamvr_trackedobject trackedobject;
+//    gameobject pointingobj;
+//    gameobject targetobj = null;
 
-    // Use this for initialization
-    void Start () {
-        trackedObject = GetComponent<SteamVR_TrackedObject>();
-    }
+//    use this for initialization
 
-    // Update is called once per frame
-    void Update() {
-        Ray ray = new Ray(transform.position, transform.forward);
-        var device = SteamVR_Controller.Input((int)trackedObject.index);
+//   void start () {
 
-        if (device.GetPressDown(SteamVR_Controller.ButtonMask.Trigger))
-        {
-            if (Physics.Raycast(ray, out hit))
-            {
-                pointingObj = hit.transform.gameObject;
-                grabObject(pointingObj);
-            }
-        }
+//       trackedobject = getcomponent<steamvr_trackedobject>();
+//    }
 
-        if (device.GetPressUp(SteamVR_Controller.ButtonMask.Trigger))
-        {
-            releaseObject();
-        }
+//    update is called once per frame
+//    void update()
+//    {
+//        ray ray = new ray(transform.position, transform.forward);
+//        var device = steamvr_controller.input((int)trackedobject.index);
 
-    }
-    void grabObject(GameObject obj)
-    {
-        targetObj = obj;
-        FixedJoint fj = gameObject.GetComponent<FixedJoint>();
-        fj.connectedBody = targetObj.GetComponent<Rigidbody>();
-    }
+//        if (device.getpressdown(steamvr_controller.buttonmask.trigger))
+//        {
+//            if (physics.raycast(ray, out hit))
+//            {
+//                pointingobj = hit.transform.gameobject;
+//                grabobject(pointingobj);
+//            }
+//        }
 
-    void releaseObject()
-    {
-        FixedJoint fj = gameObject.GetComponent<FixedJoint>();
-        if (fj != null)
-        {
-            fj.connectedBody = null;
-        }
-        targetObj = null;
-    }
-}
+//        if (device.getpressup(steamvr_controller.buttonmask.trigger))
+//        {
+//            releaseobject();
+//        }
+
+//    }
+//    void grabobject(gameobject obj)
+//    {
+//        targetobj = obj;
+//        fixedjoint fj = gameobject.getcomponent<fixedjoint>();
+//        fj.connectedbody = targetobj.getcomponent<rigidbody>();
+//    }
+
+//    void releaseobject()
+//    {
+//        fixedjoint fj = gameobject.getcomponent<fixedjoint>();
+//        if (fj != null)
+//        {
+//            fj.connectedbody = null;
+//        }
+//        targetobj = null;
+//    }
+//}
 
 
 //    void OnCollisionStay(Collision other)

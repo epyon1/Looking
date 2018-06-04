@@ -28,7 +28,7 @@ public class GameOver : MonoBehaviour
         text.text = "この後は感想戦タイムになります。";
         yield return new WaitForSeconds(2);
 
-        text.text = "引き続きUTVポートフォリオでお楽しみ下さい。";
+        text.text = "引き続きUTVポートフォリオで\nお楽しみ下さい。";
         yield return new WaitForSeconds(4);
 
         Debug.Log("ゲームを終了します");

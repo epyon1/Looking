@@ -8,7 +8,7 @@ public class Destroy : MonoBehaviour {
     void OnTriggerEnter(Collider hit)
     {
         //接触対象はPlayerタグですか？
-        if (hit.CompareTag("Player"))
+        if (hit.gameObject.tag == "Player")
         {
             //このコンポーネントを持つオブジェクトを破棄する
             Destroy(gameObject);
